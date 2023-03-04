@@ -16,11 +16,10 @@ def is_valid(s: str) -> bool:
         "{": "}"
     }
     for i in s:
-        if i in "}])":
-            if not q.empty() and pr[q.get_nowait()] == i:
-                pass
-            else:
+        if i in ")]}":
+            if q.empty() or pr[q.get_nowait()] != i:
                 return False
         else:
             q.put_nowait(i)
     return q.empty()
+
