@@ -26,5 +26,5 @@ def merge(nums1: List[int], m: int, nums2: List[int], n: int) -> None:
     return
 
 
-# the solution on leetcode.com :
+# the solution on leetcode.com :-
 # https://leetcode.com/problems/merge-sorted-array/solutions/3255616/python3-shell-sort-algorithm-33ms/?orderBy=most_votes
