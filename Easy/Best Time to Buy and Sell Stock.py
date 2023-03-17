@@ -9,7 +9,7 @@ Return the maximum profit you can achieve from this transaction. If you cannot a
 from typing import List
 
 
-def max_profit(self, prices: List[int]) -> int:
+def max_profit(prices: List[int]) -> int:
     max_profit, min_price = 0, float('inf')
     for price in prices:
         min_price = min(min_price, price)
